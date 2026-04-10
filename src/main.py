@@ -1,10 +1,19 @@
 print("AI-Based Autonomous Navigation System Started")
-print("Loading modules...")
+print()
 
-print("1. Grid map module loaded")
-print("2. Path planner module loaded")
-print("3. A* algorithm module loaded")
-print("4. Obstacle detector module loaded")
+grid = [
+    ["S", ".", ".", ".", "."],
+    [".", ".", ".", ".", "."],
+    [".", ".", "X", ".", "."],
+    [".", ".", ".", ".", "."],
+    [".", ".", ".", ".", "G"]
+]
 
-print("Simulation environment ready")
-print("Autonomous navigation demo started successfully")
+print("Simulation Grid:")
+for row in grid:
+    print(" ".join(row))
+
+print()
+print("S = Start")
+print("G = Goal")
+print("X = Obstacle")
